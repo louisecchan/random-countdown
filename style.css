@@ -34,12 +34,14 @@
 
 @media screen and (max-width: 420px) {
   .coming-soon {
-    margin-top: -2rem;
+    margin-top: -3.8rem;
   }
 
   .waiting {
     font-size: 3.5rem !important;
     margin-bottom: 1rem !important;
+    text-transform: uppercase !important;
+    flex-wrap: wrap !important;
   }
 
   .container-day,
