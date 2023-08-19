@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .waiting {
+  .desktop-title {
     font-size: 4.2rem !important;
   }
 
@@ -34,14 +34,18 @@
 
 @media screen and (max-width: 420px) {
   .coming-soon {
-    margin-top: -3.8rem;
+    margin-top: -6rem;
+    align-items: center !important;
+    justify-items: center !important;
   }
 
-  .waiting {
-    font-size: 3.5rem !important;
-    margin-bottom: 1rem !important;
+  .mobile-title {
+    display: block !important;
+    font-size: 5rem !important;
     text-transform: uppercase !important;
-    flex-wrap: wrap !important;
+    letter-spacing: -0.2rem !important;
+    line-height: 4rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .container-day,
@@ -55,7 +59,11 @@
   .text-hour,
   .text-minute,
   .text-second {
-    font-size: 5rem !important;
+    font-size: 3.5rem !important;
+  }
+
+  .desktop-title {
+    display: none !important;
   }
 }
 
@@ -87,12 +95,17 @@ h3 {
   padding-right: 2.5rem;
 }
 
-.waiting {
+.desktop-title,
+mobile-title {
   animation: fadeIn 3s;
   -webkit-animation: fadeIn 3s;
   -moz-animation: fadeIn 3s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
+}
+
+.mobile-title {
+  display: none;
 }
 
 .countdown {
