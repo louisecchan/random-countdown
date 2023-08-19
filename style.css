@@ -8,13 +8,20 @@
   src: url(./assets/neue-haas-display-medium.ttf);
 }
 
-@media screen and (max-width: 420px) {
-  .coming-soon {
-    margin-top: -2rem;
+@media screen and (max-width: 768px) {
+  .waiting {
+    font-size: 4.2rem !important;
   }
 
-  .waiting {
-    font-size: 3.5rem !important;
+  .countdown {
+    flex-direction: row !important;
+  }
+
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    flex: 1 !important;
   }
 
   .text-day,
@@ -22,6 +29,31 @@
   .text-minute,
   .text-second {
     font-size: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .coming-soon {
+    margin-top: -2rem;
+  }
+
+  .waiting {
+    font-size: 3.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    flex: 1 !important;
+  }
+
+  .text-day,
+  .text-hour,
+  .text-minute,
+  .text-second {
+    font-size: 5rem !important;
   }
 }
 
@@ -62,6 +94,7 @@ h3 {
 }
 
 .countdown {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
