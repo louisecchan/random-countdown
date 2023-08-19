@@ -8,7 +8,7 @@
   src: url(./assets/neue-haas-display-medium.ttf);
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 420px) {
   .coming-soon {
     margin-top: -3rem;
   }
