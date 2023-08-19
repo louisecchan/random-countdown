@@ -10,11 +10,11 @@
 
 @media screen and (max-width: 420px) {
   .coming-soon {
-    margin-top: -3rem;
+    margin-top: -2rem;
   }
 
   .waiting {
-    font-size: 5rem !important;
+    font-size: 3.5rem !important;
   }
 
   .text-day,
