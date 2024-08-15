@@ -56,24 +56,34 @@
     letter-spacing: -0.2rem !important;
     line-height: 4rem !important;
     margin-bottom: 1rem !important;
+    text-align: left;
   }
 
-  /*.container-day,*/
-  /*.container-hour,*/
-  /*.container-minute,*/
-  /*.container-second {*/
-  /*  flex: 1 !important;*/
-  /*}*/
+  .countdown {
+    padding-left: 2.5rem;
+  }
+
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    padding-right: 25px;
+  }
 
   .text-day,
   .text-hour,
   .text-minute,
   .text-second {
-    font-size: 3.5rem !important;
+    font-size: 4.8rem !important;
+    text-align: left;
   }
 
   .desktop-title {
     display: none !important;
+  }
+
+  h3 {
+    text-align: left;
   }
 }
 
