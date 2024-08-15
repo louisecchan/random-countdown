@@ -67,7 +67,8 @@
 
   .countdown {
     padding-left: 2.5rem;
-    gap: 10px
+    gap: 10px;
+    margin-top: 6rem;
   }
 
   .container-day,
