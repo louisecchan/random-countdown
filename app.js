@@ -1,7 +1,13 @@
 const countdown = () => {
-  const countDate = new Date("Jul 26, 2025 00:00:00").getTime();
+  let countDate = new Date("Dec 26, 2025 00:00:00").getTime();
   const now = new Date().getTime();
-  const gap = countDate - now;
+  let gap = countDate - now;
+
+  // If countdown is finished, add a year to the target date
+  if (gap < 0) {
+    countDate = new Date(countDate + (365 * 24 * 60 * 60 * 1000));
+    gap = countDate - now;
+  }
 
   // How the fuck does time work?
   const second = 1000;
