@@ -1,21 +1,20 @@
 const countdown = () => {
-  let countDate = new Date("Dec 26, 2025 00:00:00").getTime();
-  const now = new Date().getTime();
-  let gap = countDate - now;
+  // Next occurrence of Dec 26, 00:00:00 (rolls to next year once reached)
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const targetThisYear = new Date(currentYear, 11, 26, 0, 0, 0, 0); // Dec is month 11
+  const targetDate =
+    now > targetThisYear
+      ? new Date(currentYear + 1, 11, 26, 0, 0, 0, 0)
+      : targetThisYear;
 
-  // If countdown is finished, add a year to the target date
-  if (gap < 0) {
-    countDate = new Date(countDate + (365 * 24 * 60 * 60 * 1000));
-    gap = countDate - now;
-  }
+  const gap = targetDate.getTime() - now.getTime();
 
-  // How the fuck does time work?
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
 
-  // Calculate the shit
   const textDay = Math.floor(gap / day);
   const textHour = Math.floor((gap % day) / hour);
   const textMinute = Math.floor((gap % hour) / minute);
