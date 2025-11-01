@@ -28,6 +28,24 @@ h3 {
 img {
   margin-left: -15px;
   margin-bottom: -40px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+img::-webkit-media-controls,
+img::-webkit-media-controls-enclosure,
+img::-webkit-media-controls-panel,
+img::-webkit-media-controls-play-button,
+img::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure {
+  display: none !important;
 }
 
 .coming-soon {
@@ -192,6 +210,15 @@ mobile-title {
     width: 100px;
     margin: 0 auto;
     object-fit: contain;
+    pointer-events: none;
+  }
+
+  img::-webkit-media-controls {
+    display: none !important;
+  }
+
+  img::-webkit-media-controls-enclosure {
+    display: none !important;
   }
 
   .container-day,
