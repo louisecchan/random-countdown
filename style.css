@@ -46,6 +46,24 @@
   .container-second {
     flex: 1 0 50% !important;
   }
+
+  .desktop-title {
+    font-size: 3.9rem !important;
+  }
+
+  .countdown {
+    margin: 0 5rem;
+  }
+
+  .container-day,
+  .container-minute {
+    text-align: left;
+  }
+
+  .container-hour,
+  .container-second {
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 480px) {
