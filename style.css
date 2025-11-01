@@ -34,17 +34,46 @@ img {
   user-select: none;
 }
 
+/* Hide all media controls for images and videos - All browsers */
 img::-webkit-media-controls,
 img::-webkit-media-controls-enclosure,
 img::-webkit-media-controls-panel,
 img::-webkit-media-controls-play-button,
-img::-webkit-media-controls-start-playback-button {
+img::-webkit-media-controls-start-playback-button,
+img::-webkit-media-controls-timeline,
+img::-webkit-media-controls-current-time-display,
+img::-webkit-media-controls-time-remaining-display,
+img::-webkit-media-controls-mute-button,
+img::-webkit-media-controls-volume-slider {
   display: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 video::-webkit-media-controls,
-video::-webkit-media-controls-enclosure {
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-timeline,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display,
+video::-webkit-media-controls-mute-button,
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Firefox */
+video::-moz-media-controls {
+  display: none !important;
+}
+
+/* IE/Edge */
+video::-ms-media-controls {
   display: none !important;
 }
 
@@ -213,12 +242,20 @@ mobile-title {
     pointer-events: none;
   }
 
-  img::-webkit-media-controls {
+  img::-webkit-media-controls,
+  img::-webkit-media-controls-enclosure,
+  img::-webkit-media-controls-panel,
+  img::-webkit-media-controls-play-button,
+  img::-webkit-media-controls-start-playback-button,
+  img::-webkit-media-controls-timeline,
+  img::-webkit-media-controls-current-time-display,
+  img::-webkit-media-controls-time-remaining-display,
+  img::-webkit-media-controls-mute-button,
+  img::-webkit-media-controls-volume-slider {
     display: none !important;
-  }
-
-  img::-webkit-media-controls-enclosure {
-    display: none !important;
+    -webkit-appearance: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
   }
 
   .container-day,
