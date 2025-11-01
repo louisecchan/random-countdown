@@ -49,8 +49,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .coming-soon {
-    margin-top: -6rem;
+  .coming-soon { 
     align-items: center !important;
     justify-items: center !important;
   }
@@ -68,9 +67,7 @@
   }
 
   .countdown {
-    padding-left: 2.5rem;
     gap: 10px;
-    margin-top: 10rem;
   }
 
   .container-day,
