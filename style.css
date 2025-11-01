@@ -8,116 +8,6 @@
   src: url(./assets/neue-haas-display-medium.ttf);
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #000;
-  }
-
-  img {
-    display: none;
-  }
-
-  .desktop-title {
-    font-size: 5.5rem !important;
-    color: #fff;
-  }
-
-  .countdown {
-    flex-direction: row !important;
-  }
-
-  .container-day,
-  .container-hour,
-  .container-minute,
-  .container-second {
-    flex: 1;
-  }
-
-  .text-day,
-  .text-hour,
-  .text-minute,
-  .text-second {
-    font-size: 4rem !important;
-    color: #ff9b7a !important;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .container-day,
-  .container-hour {
-    flex: 1 0 50% !important;
-  }
-
-  .container-minute,
-  .container-second {
-    flex: 1 0 50% !important;
-  }
-
-  .desktop-title {
-    font-size: 3.9rem !important;
-  }
-
-  .countdown {
-    margin: 0 5rem;
-  }
-
-  .container-day,
-  .container-minute {
-    text-align: left;
-  }
-
-  .container-hour,
-  .container-second {
-    text-align: right;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .coming-soon {
-    align-items: center !important;
-    justify-items: center !important;
-  }
-
-  .mobile-title {
-    display: none !important;
-    /*display: block !important;*/
-    /*font-size: 5rem !important;*/
-    /*text-transform: uppercase !important;*/
-    /*letter-spacing: -0.2rem !important;*/
-    /*line-height: 4rem !important;*/
-    /*margin-top: 5rem !important;*/
-    /*margin-bottom: 1rem !important;*/
-    /*text-align: left;*/
-  }
-
-  .countdown {
-    gap: 10px;
-  }
-
-  .container-day,
-  .container-hour,
-  .container-minute,
-  .container-second {
-    padding-right: 25px;
-  }
-
-  .text-day,
-  .text-hour,
-  .text-minute,
-  .text-second {
-    font-size: 4.8rem !important;
-    text-align: left;
-  }
-
-  .desktop-title {
-    display: none !important;
-  }
-
-  h3 {
-    text-align: left;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -258,5 +148,115 @@ mobile-title {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #000;
+  }
+
+  img {
+    display: none;
+  }
+
+  .desktop-title {
+    font-size: 5.5rem !important;
+    color: #fff;
+  }
+
+  .countdown {
+    flex-direction: row !important;
+  }
+
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    flex: 1;
+  }
+
+  .text-day,
+  .text-hour,
+  .text-minute,
+  .text-second {
+    font-size: 4rem !important;
+    color: #ff9b7a !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  img {
+    display: block;
+    content: url("./assets/snoo-running.gif");
+    width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+
+  .container-day,
+  .container-hour {
+    flex: 1 0 50% !important;
+  }
+
+  .container-minute,
+  .container-second {
+    flex: 1 0 50% !important;
+  }
+
+  .desktop-title {
+    font-size: 3.9rem !important;
+  }
+
+  .countdown {
+    margin: 0 5rem;
+  }
+
+  .container-day,
+  .container-minute {
+    text-align: left;
+  }
+
+  .container-hour,
+  .container-second {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .coming-soon {
+    align-items: center !important;
+    justify-items: center !important;
+  }
+
+  .mobile-title {
+    display: none !important;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .container-day,
+  .container-hour,
+  .container-minute,
+  .container-second {
+    padding-right: 25px;
+  }
+
+  .text-day,
+  .text-hour,
+  .text-minute,
+  .text-second {
+    font-size: 4.8rem !important;
+    text-align: left;
+  }
+
+  .desktop-title {
+    display: none !important;
+  }
+
+  h3 {
+    text-align: left;
   }
 }
