@@ -9,12 +9,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    background-color: #000;
+  }
+
   img {
     display: none;
   }
 
   .desktop-title {
     font-size: 5.5rem !important;
+    color: #fff;
   }
 
   .countdown {
@@ -33,6 +38,7 @@
   .text-minute,
   .text-second {
     font-size: 4rem !important;
+    color: #ff9b7a !important;
   }
 }
 
