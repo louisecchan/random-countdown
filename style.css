@@ -293,6 +293,10 @@ mobile-title {
     justify-items: center !important;
   }
 
+  img {
+    display: none !important;
+  }
+
   .mobile-title {
     display: none !important;
   }
