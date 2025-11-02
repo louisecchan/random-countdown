@@ -200,11 +200,16 @@ mobile-title {
 
 @media screen and (max-width: 768px) {
   body {
-    background-color: #000;
+    background-color: #fc4300;
   }
 
   img {
-    display: none;
+    display: block;
+    content: url("./assets/snoo-fade-out.gif");
+    width: 100px;
+    margin: 0 auto;
+    object-fit: contain;
+    pointer-events: none;
   }
 
   .desktop-title {
@@ -228,11 +233,22 @@ mobile-title {
   .text-minute,
   .text-second {
     font-size: 4rem !important;
-    color: #ff9b7a !important;
+    color: #ffe66d !important;
+  }
+
+  .title-day,
+  .title-hour,
+  .title-minute,
+  .title-second {
+    color: #fff;
   }
 }
 
 @media screen and (max-width: 576px) {
+  body {
+    background-color: #000;
+  }
+
   img {
     display: block;
     content: url("./assets/snoo-running.gif");
@@ -284,6 +300,20 @@ mobile-title {
   .container-hour,
   .container-second {
     text-align: right;
+  }
+
+  .text-day,
+  .text-hour,
+  .text-minute,
+  .text-second {
+    color: #ff9b7a !important;
+  }
+
+  .title-day,
+  .title-hour,
+  .title-minute,
+  .title-second {
+    color: #ed6f22;
   }
 }
 
