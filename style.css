@@ -317,14 +317,34 @@ mobile-title {
   }
 }
 
+@keyframes floatLeftToRight {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
 @media screen and (max-width: 480px) {
+  body {
+    background-color: #fff;
+  }
+
   .coming-soon {
     align-items: center !important;
     justify-items: center !important;
+    overflow: hidden;
   }
 
   img {
-    display: none !important;
+    display: block !important;
+    content: url("./assets/snoo-died.png");
+    width: 150px;
+    margin: 0 auto;
+    object-fit: contain;
+    pointer-events: none;
+    animation: floatLeftToRight 5s linear infinite;
   }
 
   .mobile-title {
@@ -348,6 +368,14 @@ mobile-title {
   .text-second {
     font-size: 4.8rem !important;
     text-align: left;
+    color: #ef450d !important;
+  }
+
+  .title-day,
+  .title-hour,
+  .title-minute,
+  .title-second {
+    color: #ed6f22;
   }
 
   .desktop-title {
