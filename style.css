@@ -206,7 +206,7 @@ mobile-title {
   img {
     display: block;
     content: url("./assets/snoo-fade-out.gif");
-    width: 100px;
+    width: 150px;
     margin: 0 auto;
     object-fit: contain;
     pointer-events: none;
