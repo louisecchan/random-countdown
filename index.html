@@ -1148,15 +1148,8 @@
           // Save to localStorage
           localStorage.setItem("cakeDay", cakeDay);
 
-          // Show success message (optional)
-          alert(
-            `🎂 Your cake day has been saved: ${new Date(
-              cakeDay
-            ).toLocaleDateString()}!`
-          );
-
-          // Close modal
-          closeModal();
+          // Redirect to countdown page
+          window.location.href = "countdown.html";
         }
       });
 
