@@ -1113,12 +1113,9 @@
       const cakeDayForm = document.getElementById("cakeDayForm");
       const cakeDayInput = document.getElementById("cakeDayInput");
 
-      // Show modal on page load if cake day not set
+      // Show modal on page load every time
       window.addEventListener("load", function () {
-        const savedCakeDay = localStorage.getItem("cakeDay");
-        if (!savedCakeDay) {
-          modal.classList.add("active");
-        }
+        modal.classList.add("active");
       });
 
       // Close modal function
