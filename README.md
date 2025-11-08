@@ -6,7 +6,7 @@ A web-based countdown timer to celebrate your Reddit Cake Day! Never miss the sp
 
 * 🎂 Countdown to your Reddit Cake Day
 * ⏰ Shows days, hours, minutes, and seconds
-* 🎉 Watch Snoo celebrate with you
+* 🎉 Watch Snoo move in different cute ways on every screen size
 
 ## Technologies Used
 
