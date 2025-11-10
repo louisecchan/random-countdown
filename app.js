@@ -1,7 +1,7 @@
 const countdown = () => {
   // Get cake day from localStorage
   const savedCakeDay = localStorage.getItem("cakeDay");
-  
+
   if (!savedCakeDay) {
     // If no cake day is set, redirect to index page
     window.location.href = "index.html";
