@@ -150,6 +150,7 @@
         height: 24px;
         border-radius: 50%;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        object-fit: cover;
       }
 
       .user-info {
@@ -800,7 +801,11 @@
             </svg>
           </button>
           <div class="user-profile" title="User Menu">
-            <div class="user-avatar"></div>
+            <img
+              src="assets/user-logo.png"
+              alt="User Avatar"
+              class="user-avatar"
+            />
             <div class="user-info">
               <span class="username">u/joyification</span>
               <span class="karma">1,234 karma</span>
@@ -878,9 +883,41 @@
           <!-- Post 1 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">12.5k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
@@ -909,9 +946,41 @@
           <!-- Post 2 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">8.2k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
@@ -946,9 +1015,41 @@
           <!-- Post 3 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">15.8k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
@@ -982,9 +1083,41 @@
           <!-- Post 4 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">4.3k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
@@ -1025,9 +1158,41 @@
           <!-- Post 5 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">22.1k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
@@ -1069,9 +1234,41 @@
           <!-- Post 6 -->
           <div class="post-card">
             <div class="vote-section">
-              <button class="vote-btn">▲</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-upvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="upvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 19a3.966 3.966 0 01-3.96-3.962V10.98H2.838a1.731 1.731 0 01-1.605-1.073 1.734 1.734 0 01.377-1.895L9.364.254a.925.925 0 011.272 0l7.754 7.759c.498.499.646 1.242.376 1.894-.27.652-.9 1.073-1.605 1.073h-3.202v4.058A3.965 3.965 0 019.999 19H10zM2.989 9.179H7.84v5.731c0 1.13.81 2.163 1.934 2.278a2.163 2.163 0 002.386-2.15V9.179h4.851L10 2.163 2.989 9.179z"
+                  ></path>
+                </svg>
+              </button>
               <span class="vote-count">6.7k</span>
-              <button class="vote-btn">▼</button>
+              <button class="vote-btn">
+                <svg
+                  rpl=""
+                  aria-hidden="true"
+                  class="icon-downvote"
+                  fill="currentColor"
+                  height="16"
+                  icon-name="downvote-outline"
+                  viewBox="0 0 20 20"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 1a3.966 3.966 0 013.96 3.962V9.02h3.202c.706 0 1.335.42 1.605 1.073.27.652.122 1.396-.377 1.895l-7.754 7.759a.925.925 0 01-1.272 0l-7.754-7.76a1.734 1.734 0 01-.376-1.894c.27-.652.9-1.073 1.605-1.073h3.202V4.962A3.965 3.965 0 0110 1zm7.01 9.82h-4.85V5.09c0-1.13-.81-2.163-1.934-2.278a2.163 2.163 0 00-2.386 2.15v5.859H2.989l7.01 7.016 7.012-7.016z"
+                  ></path>
+                </svg>
+              </button>
             </div>
             <div class="post-content">
               <div class="post-header">
