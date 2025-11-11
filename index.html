@@ -531,7 +531,7 @@
         }
 
         .content-wrapper {
-          padding: 0 15px;
+          padding: 0 12px;
         }
       }
 
@@ -1739,12 +1739,9 @@
       const cakeDayForm = document.getElementById("cakeDayForm");
       const cakeDayInput = document.getElementById("cakeDayInput");
 
-      // Show modal on page load only if not seen before
+      // Show modal on page load
       window.addEventListener("load", function () {
-        const hasSeenModal = localStorage.getItem("hasSeenCakeDayModal");
-        if (!hasSeenModal) {
-          modal.classList.add("active");
-        }
+        modal.classList.add("active");
       });
 
       // Close modal function
