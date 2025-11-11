@@ -96,11 +96,6 @@ video::-ms-media-controls {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background-color: #ffffff;
-  border-radius: 4px;
-  max-width: 900px;
-  margin: 2rem auto;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
 }
 
 .desktop-title,
