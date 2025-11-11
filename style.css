@@ -139,7 +139,6 @@ mobile-title {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid #e0e0e0;
 }
 
 .container-hour {
@@ -156,7 +155,6 @@ mobile-title {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid #e0e0e0;
 }
 
 .container-minute {
@@ -173,7 +171,6 @@ mobile-title {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid #e0e0e0;
 }
 
 .container-second {
@@ -190,7 +187,6 @@ mobile-title {
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid #e0e0e0;
 }
 
 .text-day,
